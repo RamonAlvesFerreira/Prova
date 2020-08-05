@@ -9,11 +9,11 @@
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <meta charset="UTF-8">
-<title>Lista de Clientes</title>
+<title>Lista de Modulos</title>
 </head>
 <body>
 	<br>
-	<h3 style="text-align:center">CADASTRO DE CLIENTES</h3>
+	<h3 style="text-align:center">LISTA DE MODULOS</h3>
 	<br>
 	<table class="table" width="50%">
 		<tr>
@@ -33,10 +33,10 @@
 		
 		<c:forEach var="modulo" items="${modulo}">
 				<tr>
-					<td><c:out value="${modulo.getNm_modulo()}"></c:out>  </td>
-					<td><c:out value="${modulo.getNm_instrutor1()}"></c:out>  </td>
-					<td><c:out value="${modulo.getNm_instrutor2()}"></c:out>  </td>
-					<td><c:out value="${modulo.getDt_inicio()}"></c:out>  </td>
+					<td><c:out value="${ modulo.getNm_modulo()}"></c:out>  </td>
+					<td><c:out value="${ modulo.getNm_instrutor1()}"></c:out>  </td>
+					<td><c:out value="${ modulo.getNm_instrutor2()}"></c:out>  </td>
+					<td><c:out value="${ modulo.getDt_inicio()}"></c:out>  </td>
 
 				</tr>
 		</c:forEach>

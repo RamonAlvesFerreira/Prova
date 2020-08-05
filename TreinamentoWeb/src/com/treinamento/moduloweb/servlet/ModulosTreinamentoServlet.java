@@ -23,14 +23,15 @@ public class ModulosTreinamentoServlet extends HttpServlet{
 	}
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	
-		ModuloService service = new ModuloService();
-		List<Modulo> listaModulos = service.listarModulo();
 		
-		req.setAttribute("cliente", listaModulos);
+		ModuloService service = new ModuloService();
+		List<Modulo> listaModulo = service.listarModulo();
+		
+		req.setAttribute("modulo", listaModulo);
 		
 		RequestDispatcher rd = req.getRequestDispatcher("/consultar-modulos.jsp");
 		rd.forward(req, resp);
+		
 	}
 
 	
